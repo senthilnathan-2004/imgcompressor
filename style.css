@@ -39,7 +39,9 @@ header{
     z-index: 2;
    
 }
-
+.checkbox{
+    z-index:-1;
+}
 header h1{
     text-align: center;
     margin: 0;
