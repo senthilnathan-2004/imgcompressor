@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* General Styling (Light Theme with Dark Accents) */
+:root {
+    --primary-color:#1e293b;      /* Dark text for primary content */
+    --secondary-color: #667080;    /* Medium-dark text for less important info */
+    --accent-color:#1e293b;/* Blue accent for interactive elements */
+    --background-color: #f9f9f9;    /* Light background for the entire page */
+    --card-background: #ffffff;    /* White background for content containers */
+    --border-color: #e0e0e0;      /* Light gray border color */
+    --border-radius: 0.75rem;     /* Slightly rounded corners */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --heading-color: #1e293b;        /* Very dark color for headings */
+    --link-color:#1e293b;
+    --link-hover-color: #334155;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.7;
+}
+header{
+    width: 100%;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #1e293b;;
+   
+}
+
+header h1{
+    text-align: center;
+    margin: 0;
+    padding:2px;
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    color:white;
+}
+header img{
+    width: 85px;
+    height:70px;
+    position: absolute;
+    left:1rem;
+    top:0rem ;
+    border-radius:0.6rem;
+}  
+.container {
+    padding: 2rem;
+    text-align: left;
+    max-width: 800px;
+    margin:2rem 0 0 0;
+}
+
+h1, h2, h3 {
+    color: var(--heading-color);  /* Use the dark heading color */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+p {
+    margin-bottom: 1.2rem;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+ul {
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    padding-bottom:1rem;
+    word-spacing: 0.3rem;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+pre {
+    background-color: #f5f5f5;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    overflow-x: auto;
+    margin-bottom: 1.2rem;
+    font-family: monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--link-hover-color);
+}
+
+strong {
+    color: var(--primary-color);
+}
+
+.controls-group {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--card-background);
+}
+
+.controls-group label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.controls-group input[type="number"],
+.controls-group input[type="range"],
+.controls-group select {
+    width: calc(100% - 20px);
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: var(--primary-color);
+}
+
+.controls-group input[type="number"]:focus,
+.controls-group input[type="range"]:focus,
+.controls-group select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.controls-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+    transform: scale(1.2);
+}
+
+button {
+    padding: 1rem 2rem;
+    background-color: var(--accent-color);
+    color: var(--card-background);
+    border: none;
+    font-size: 1.2rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+#upload{
+    margin-left: 0.2rem;
+
+  }
+button:hover {
+    background-color: #2980b9;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+#output-container {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+#output-container img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.2rem;
+}
+
+#info {
+    margin-top: 2rem;
+    color: #555;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+}
+
+.description-section {
+    margin-top: 3rem;
+}
+
+.description-section h2 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: var(--heading-color);
+    font-size: 1.8rem;
+}
+
+.description-section p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+footer p{
+    font-size:0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+    header img{
+        left :0.3rem;
+        width: 80px;
+        height: 60px;
+        top:0rem;
+    }
+    header h1{
+          font-size: 2.2rem;
+        margin-left:3.5rem;
+    }
+    header{
+          padding: 5px 0;
+    }
+    .controls-group input[type="number"],
+    .controls-group input[type="range"],
+    .controls-group select {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    .description-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .description-section p {
+        font-size: 1rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .controls-group {
+        padding: 1rem;
+    }
+
+    .description-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .description-section p {
+        font-size: 0.9rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+}
