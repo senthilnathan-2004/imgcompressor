@@ -32,7 +32,9 @@ header{
     padding: 8px 0;
     display: flex;
     justify-content: center;
-    background-color: #1e293b;;
+    background-color: #1e293b;
+    position: sticky;
+    top: 0;
    
 }
 
