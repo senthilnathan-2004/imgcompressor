@@ -35,7 +35,8 @@ header{
     background-color: #1e293b;
     position: sticky;
     top: 0px;
-    box-shadow: 0 0 1rem var(--primary-color);
+    box-shadow: 0 0 1.5rem var(--primary-color);
+    z-index: 2;
    
 }
 
