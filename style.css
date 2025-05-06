@@ -31,17 +31,15 @@ header{
     width: 100%;
     padding: 8px 0;
     display: flex;
+    z-index: 2;
     justify-content: center;
     background-color: #1e293b;
     position: sticky;
     top: 0px;
-    box-shadow: 0 0 1.5rem var(--primary-color);
-    z-index: 2;
+    box-shadow: 0 0 1rem var(--primary-color);
    
 }
-.checkbox{
-    z-index:-1;
-}
+
 header h1{
     text-align: center;
     margin: 0;
@@ -283,6 +281,9 @@ footer p{
           font-size: 2.2rem;
         margin-left:3.5rem;
     }
+    .checkbox{
+      z-index: -1;
+    }
     header{
           padding: 5px 0;
     }
@@ -333,5 +334,7 @@ footer p{
 
     ul li {
         font-size: 0.9rem;
+       
+       
     }
 }
